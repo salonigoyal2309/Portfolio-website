@@ -9,6 +9,7 @@ import '../styles/style.css'
 
 const useStyles = makeStyles({
     body:{
+        overflowX: 'hidden',
         backgroundColor: '#DBFC00',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
@@ -16,6 +17,8 @@ const useStyles = makeStyles({
         height: '100vh',
         alignItems: 'center',
         justifyContent: 'center',
+        display: "flex",
+        flexDirection: "column",
     }
 })
 
@@ -23,14 +26,17 @@ export default function Home(){
     const classes = useStyles()
     return(
         <Container class={ classes.body }>
-            <Grid container spacing={ 1 }>
+            <Grid container alignItems="center" justify="center" spacing={ 3 } >
                 <Grid item lg={ 12 } md={ 12 } sm={ 12 } xs={ 12 } >
-                  <Typography variant={ 'h1' } style={ { paddingTop: '25%', fontFamily: 'Boogaloo' } }>
+                  <Typography variant={ 'h1' } style={ { fontFamily: 'Boogaloo'} }>
                     <TextyAnim mode='random' interval='100'>
                     Hi, I am 
-                    SALONI GOYAL
+                    SALONI GOYAL :)
                     </TextyAnim>
                   </Typography>
+                </Grid>
+                <Grid item lg={ 12 } md={ 12 } sm={ 12 } xs={ 12 } >
+                    <Button href="#profile" variant="outlined" style={ { backgroundColor:'black', borderRadius:50, color:'#DBFC00' } }>MORE INFO</Button>
                 </Grid>
             </Grid>
         </Container>
