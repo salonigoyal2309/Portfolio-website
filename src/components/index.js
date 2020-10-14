@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './home.js'
 import Profile from './profile.js'
+import Education from './education.js'
+import Skills from './skills.js'
 import Projects from './projects.js'
 import Contact from './contact.js'
 import TopBar from './topbar.js'
@@ -12,10 +14,24 @@ function Index(){
     <>
       <Router>
         <TopBar />
-        <Route path="/profile" component={Profile} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/" component={Home} />
+        <section id="home">
+          <Home />
+        </section>
+        <section id="about">
+          <Profile/>
+        </section>
+        <section id="education">
+          <Education />
+        </section>
+        <section id="skills">
+          <Skills />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </Router>
     </>
   )
