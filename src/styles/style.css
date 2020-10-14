@@ -1,1 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Boogaloo');
+@import url('https://fonts.googleapis.com/css?family=Varela');
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+.nav-link{
+    color: #ECE9D6 !important;
+}
+
+.active{
+    color: #DDD4B5 !important;
+}
+
+.navbar-toggler-icon{
+    background-color: #ECE9D6 !important;
+}
+
+.navbar-brand{
+    color: #ECE9D6 !important;
+}
+
+.avatar{
+    border: 3px solid white;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
