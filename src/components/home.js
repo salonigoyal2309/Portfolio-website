@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import saloniCircleImage from '../images/saloniCircle2.png'
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
+import { Link } from "react-scroll";
 import '../styles/page1.css'
 import '../styles/style.css'
 import '../styles/arrow.css'
@@ -58,9 +59,20 @@ export default function Home(){
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <div class="encircle bounce animated">
+                    <Link
+                      href="#about"
+                      to="about"
+                      activeClass="active"
+                      className="nav-link"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={500}
+                    >
+                      <div class="encircle bounce animated">
                       <div class="arrow"></div>
-                    </div>
+                      </div>
+                    </Link>
                   </Grid>
               </Grid>
             </div>
