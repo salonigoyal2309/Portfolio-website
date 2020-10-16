@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.avatar{
+    border: 3px solid white;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
 
 html, body {
     max-width: 100% !important;
@@ -37,8 +44,7 @@ html, body {
     background:transparent;
 }
 
-.avatar{
-    border: 3px solid white;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
+#resume:hover{
+    color: black;
+    font-weight: bold;
 }
