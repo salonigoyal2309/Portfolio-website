@@ -5,20 +5,36 @@ html, body {
     overflow-x: hidden !important;
 }
 
+.navbar{
+    background-color: black;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
 .nav-link{
-    color: #ECE9D6 !important;
+    color: #A89F7F !important;
 }
 
 .active{
-    color: #DDD4B5 !important;
+    color: #EBE6DB !important;
 }
 
 .navbar-toggler-icon{
     background-color: #ECE9D6 !important;
 }
 
+.navbar-collapse{
+    text-align: left;
+    padding-left: 3%
+}
+
+
 .navbar-brand{
     color: #ECE9D6 !important;
+}
+
+.navbar-inner {
+    background:transparent;
 }
 
 .avatar{
