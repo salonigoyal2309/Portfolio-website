@@ -13,6 +13,15 @@
     background-color: grey;
 }
 
+.card{
+    margin: 20px;
+    height: 400px;
+}
+
+.card-img-top{
+    height: 200px !important;
+}
+
 #Databases .progress-bar{
     background-color: #da8804 !important;
 }
@@ -130,4 +139,9 @@ html, body {
 #resume:hover{
     color: black;
     font-weight: bold;
+}
+
+.MuiButtonBase-root:hover{
+    font-weight: bold !important;
+    color: black !important;
 }
