@@ -44,7 +44,7 @@ export default function Home(){
                     <img src={ saloniCircleImage } height = '180vh' width = '180vw' class="avatar"/>
                   </Grid>
                   <Grid item  style={ { padding: 10 } }>
-                    <Typography variant={ 'h3' } style={ { color:'#DDD4B5' , fontFamily: 'Varela'} }>
+                    <Typography  variant={ 'h3' } style={ { color:'#DDD4B5' , fontFamily: 'Varela', fontWeight: 'bold'} }>
                       SALONI GOYAL
                     </Typography>
                   </Grid>

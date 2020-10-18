@@ -14,6 +14,7 @@ export default class TopBar extends Component{
           const navBarCollapse = document.querySelector('.navbar-collapse');
           const navBar = document.querySelector('.navbar');
           const navbarBrand = document.querySelector('.navbar-brand');
+          const navbarToggleIcon = document.querySelector('.navbar-toggler-icon');
           
           if (isTop) {
 
@@ -22,15 +23,17 @@ export default class TopBar extends Component{
               navBar.setAttribute('style','background-color: black; opacity: 0.8');
               navBarCollapse.setAttribute('style', 'text-align: left; padding-left: 3%');
               navbarBrand.setAttribute('style','color:  #ECE9D6 !important;');
+              navbarToggleIcon.setAttribute('style','background-color: #ECE9D6 !important;');
 
           }
           else{
 
             for(let i=0;i<navLink.length;i++) navLink[i].setAttribute('style','color: black !important;');
-            activeLink.setAttribute('style','color: green !important;');
-            navBar.setAttribute('style','background-color: white');
+            if(activeLink) activeLink.setAttribute('style','color: #fa448c !important;');
+            navBar.setAttribute('style','background-color: white; opacity: 1');
             navBarCollapse.setAttribute('style', 'background-color: white; opacity: 1; text-align: left; padding-left: 3%');
             navbarBrand.setAttribute('style','color:  black !important;');
+            navbarToggleIcon.setAttribute('style','background-color: white !important;');
 
          }
         });

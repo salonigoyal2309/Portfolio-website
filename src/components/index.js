@@ -1,8 +1,7 @@
 import React from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import Home from './home.js'
 import Profile from './profile.js'
-import Education from './education.js'
 import Skills from './skills.js'
 import Projects from './projects.js'
 import Contact from './contact.js'
@@ -19,9 +18,6 @@ function Index(){
         </section>
         <section id="about">
           <Profile/>
-        </section>
-        <section id="education">
-          <Education />
         </section>
         <section id="skills">
           <Skills />
