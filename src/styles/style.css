@@ -145,3 +145,43 @@ html, body {
     font-weight: bold !important;
     color: black !important;
 }
+
+#LinkedIn{
+    margin: 10px !important;
+}
+
+#LinkedIn:hover{
+    color: #0e76a8 !important;
+}
+
+#Github{
+    margin: 10px !important;
+}
+
+#Github:hover{
+    color: #6cc644 !important;
+}
+
+#Twitter{
+    margin: 10px !important;
+}
+
+#Twitter:hover{
+    color: #00acee !important;
+}
+
+#Instagram{
+    margin: 10px !important;
+}
+
+#Instagram:hover{
+    color: #DD2A7B !important;
+}
+
+#Gmail{
+    margin: 10px !important;
+}
+
+#Gmail:hover{
+    color: #B23121 !important;
+}
