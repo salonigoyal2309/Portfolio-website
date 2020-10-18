@@ -1,6 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Varela');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+#all{
+    margin: 10px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+
+#all:hover{
+    font-weight: bold;
+    background-color: grey;
+}
+
+#Databases .progress-bar{
+    background-color: #da8804 !important;
+}
+
+#databases{
+    margin: 10px;
+    background-color: #FF9C00;
+    font-weight: bold;
+    color: white;
+}
+
+#databases:hover{
+    background-color: #fac36b;
+}
+
+#Frameworks .progress-bar{
+    background-color: #13c0c0 !important;
+}
+
+#frameworks{
+    margin: 10px;
+    font-weight: bold;
+    background-color: #01BFBF;
+    color: white;
+}
+
+#frameworks:hover{
+    background-color: #3bebeb;
+}
+
+#Languages .progress-bar{
+    background-color: rgb(145, 145, 22) !important;
+}
+
+#languages{
+    margin: 10px;
+    font-weight: bold;
+    background-color: rgb(172, 172, 26);
+    color: white;
+}
+
+#languages:hover{
+    background-color: rgb(231, 231, 84);
+}
+
+#Tools .progress-bar{
+    background-color: #bb3621 !important;
+}
+
+#tools{
+    margin: 10px;
+    font-weight: bold;
+    background-color: #fa4e33;
+    color: white;
+}
+
+#tools:hover{
+    background-color: #ff8977;
+}
+
 .avatar{
     border: 3px solid white;
     -webkit-border-radius: 500px;
@@ -42,6 +114,17 @@ html, body {
 
 .navbar-inner {
     background:transparent;
+}
+
+.progress{
+   margin: 2% 15% 2% 15% !important;
+   height: 25px !important;
+}
+
+.progress-bar{
+    font-weight: bold !important;
+    text-align: left !important;
+    padding-left: 10px !important;
 }
 
 #resume:hover{
