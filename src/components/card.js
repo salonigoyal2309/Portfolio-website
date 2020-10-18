@@ -1,20 +1,7 @@
 import React, {Component} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from 'react-bootstrap/Card';
 import Button from '@material-ui/core/Button';
 import '../styles/style.css';
-import { Typography } from '@material-ui/core';
-
-const useStyles = makeStyles({
-  cardsDisplay:{
-    display: 'flex',
-    flexDirection: 'row',
-    flexFlow: 'column wrap',
-    alignItems: 'center',
-    alignContent: 'center',
-    justifyContent: 'center',
-  }
-});
 
 export default class Cards extends Component {
 

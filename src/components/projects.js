@@ -12,7 +12,6 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
-    backgroundImage: "linear-gradient(to bottom, white 40%, grey 100%)",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     width: '100vw',
