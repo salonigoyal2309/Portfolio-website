@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "skillName" : "MongoDB",
+        "skillSet" : "Databases",
+        "now": 10
+    },
+    {
+        "id": 2,
+        "skillName" : "SQLite",
+        "skillSet" : "Databases",
+        "now": 10
+    },
+    {
+        "id": 3,
+        "skillName" : "GraphQL",
+        "skillSet" : "Databases",
+        "now": 6
+    },
+    {
+        "id": 4,
+        "skillName" : "Node.js",
+        "skillSet" : "Frameworks",
+        "now": 10
+    },
+    {
+        "id": 5,
+        "skillName" : "React",
+        "skillSet" : "Frameworks",
+        "now": 9
+    },
+    {
+        "id": 7,
+        "skillName": "Angular",
+        "skillSet": "Frameworks",
+        "now": 6
+    },
+    {
+        "id": 8,
+        "skillName" : "Flask",
+        "skillSet" : "Frameworks",
+        "now": 5
+    },
+    {
+        "skillName": "Django",
+        "skillSet": "Frameworks",
+        "now": 5
+    },
+    {
+        "id": 9,
+        "skillName": "C++",
+        "skillSet": "Languages",
+        "now": 9
+    },
+    {
+        "id": 10,
+        "skillName": "Java",
+        "skillSet": "Languages",
+        "now":8
+    },
+    {
+        "id": 11,
+        "skillName": "Python",
+        "skillSet": "Languages",
+        "now": 7
+    },
+    {
+        "id": 12,
+        "skillName": "Javascript",
+        "skillSet": "Languages",
+        "now": 10
+    },
+    {
+        "id": 13,
+        "skillName": "Bash",
+        "skillSet": "Languages",
+        "now": 8
+    },
+    {
+        "id": 14,
+        "skillName": "HTML",
+        "skillSet": "Languages",
+        "now": 10
+    },
+    {
+        "id": 15,
+        "skillName": "CSS",
+        "skillSet": "Languages",
+        "now": 9
+    },
+    {
+        "id": 16,
+        "skillName": "Typescript",
+        "skillSet": "Languages",
+        "now": 6
+    },
+    {
+        "id": 21,
+        "skillName": "PHP",
+        "skillSet": "Languages",
+        "now": 9
+    },
+    {
+        "skillName": "SCSS",
+        "skillSet": "Languages",
+        "now": 5
+    },
+    {
+        "id": 17,
+        "skillName": "Git",
+        "skillSet": "Tools",
+        "now": 9
+    },
+    {
+        "id": 18,
+        "skillName": "Bash",
+        "skillSet": "Tools",
+        "now": 9
+    },
+    {
+        "id": 19,
+        "skillName": "Heroku",
+        "skillSet": "Tools",
+        "now": 5
+    },
+    {
+        "id": 20,
+        "skillName": "WampServer",
+        "skillSet": "Tools",
+        "now": 8
+    },
+    {
+        "skillName": "Github",
+        "skillSet": "Tools",
+        "now": 9
+    }
+]
