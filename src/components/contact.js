@@ -1,10 +1,9 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import '../styles/style.css';
 import { Typography } from '@material-ui/core';
 import {SiLinkedin, SiGithub, SiInstagram, SiGmail, SiTwitter} from "react-icons/si";
 import Form from 'react-bootstrap/Form';
-import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles({
