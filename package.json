@@ -1,17 +1,22 @@
 {
   "name": "example-create-react-app-express",
   "version": "1.0.0",
+  "homepage": "http://salonigoyal2309.github.io/Portfolio-website",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "client": "cd client && yarn start",
     "server": "nodemon server/server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.3.0",
     "body-parser": "^1.19.0",
     "concurrent": "^0.3.2",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "gh-pages": "^3.1.0"
   },
   "devDependencies": {
     "concurrently": "^4.1.2"

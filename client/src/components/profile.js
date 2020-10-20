@@ -45,16 +45,13 @@ export default function Profile(){
                     </Typography>
                     <Typography variant={'subtitle1'}>
                         <div>
-                            I am a currently pursuing Computer Science and Engineering from National Institute of Technology ,Jaipur.
+                            Computer Science and Engineering from National Institute of Technology, Jaipur.
                         </div>
                         <div>
-                            I am a software engineer with passion for web development with good knowledge of MERN stack. 
+                            Software engineer with good grasp on Web development with MERN stack.
                         </div>
                         <div>
-                            I also have experience with android development and machine learning.
-                        </div> 
-                        <div>
-                            Currently I am trying to contribute to various projects through Open source.
+                            Currently experimenting with Machine learning, Open Source and parallel computations. 
                         </div>
                     </Typography>
                     </MuiThemeProvider>

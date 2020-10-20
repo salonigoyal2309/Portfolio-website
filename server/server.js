@@ -21,7 +21,7 @@ app.get('/api/mail', (req, res) => {
     const msg = {
         to: process.env.PERSONAL_EMAIL,
         from: process.env.PERSONAL_EMAIL,
-        cc: '2017ucp1061@mnit.ac.in',
+        cc: process.env.ALTERNATE_EMAIL,
         subject: req.query.name + " viewed your personal website",
         html: `<b>${ req.query.name }</b> with email <b>${ req.query.email }</b> viewed your personal website.<br />
                 Remarks: ${ req.query.remarks }`,

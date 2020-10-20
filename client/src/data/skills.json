@@ -106,6 +106,16 @@
         "now": 5
     },
     {
+        "skillName": "XML",
+        "skillSet": "Languages",
+        "now": 7
+    },
+    {
+        "skillName": "AJAX",
+        "skillSet": "Technique",
+        "now": 8
+    },
+    {
         "id": 17,
         "skillName": "Git",
         "skillSet": "Tools",
