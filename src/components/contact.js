@@ -3,8 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import '../styles/style.css';
 import { Typography } from '@material-ui/core';
 import {SiLinkedin, SiGithub, SiInstagram, SiGmail, SiTwitter} from "react-icons/si";
+import Form from 'react-bootstrap/Form';
+import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
-import axios from 'axios';
 
 const useStyles = makeStyles({
   root: {
@@ -18,43 +19,39 @@ const useStyles = makeStyles({
   }
 });
 
-function sendMail(name,email,remarks) {
-    axios.get(`http://localhost:5000/api/mail`, {
-        params:{
-            name: name,
-            email: email,
-            remarks: remarks
-        }
-    },{
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Content-Type': 'application/json',
-        }
-    })
-}
-
 export default function Contact() {
   const classes = useStyles();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [remarks, setRemarks] = useState('');
 
   return (
     <div className={classes.root}>
         <Typography variant={'h4'}  style={{ fontFamily: 'Varela' , margin : 40, fontWeight: 'bold'}}>
             Contact
         </Typography>
-        <form onSubmit={(e)=>{sendMail(name,email,remarks)}}>
-            <label style={{fontWeight:"bold"}}> Name
-                <input type="text" name="name" onChange={(e)=>setName(e.target.value)} style={{marginLeft: 10 , marginRight: 50, borderRadius: 4}}/>
-            </label>
-            <label style={{fontWeight:"bold"}}> Email
-                <input type="email" name="email" onChange={(e)=>setEmail(e.target.value)} style={{margin: 10, marginRight: 50, borderRadius: 4}}/>
-            </label>
-            <br/>
-            <textarea type="text" name="remarks" onChange={(e)=>setRemarks(e.target.value)} placeholder="Anything you want to say" rows="5" cols="40"
-                style={{margin: 10, marginRight: 50, borderRadius: 4, border: 'solid'}}/>
-            <br />
+        <form action='https://formspree.io/f/xbjpoder' method="POST">
+            <div style={{margin:10}}>
+                <div class="row" >
+                    <div class="col-md-3 col-sm-12"></div>
+                    <div class="col-md-3 col-sm-5" >
+                    <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Control required name="name" type="text" placeholder="Name" />
+                    </Form.Group>
+                    </div>
+                    <div class="col-md-3 col-sm-5" >
+                    <Form.Group controlId="exampleForm.ControlInput1">
+                        <Form.Control required name="email" type="email" placeholder="email" />
+                    </Form.Group>
+                    </div>
+                    <div class="col-md-3 col-sm-12"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-12"></div>
+                    <div class="col-md-6 col-sm-5" >
+                    <Form.Group controlId="exampleForm.ControlTextarea1">
+                        <Form.Control required name="remarks" as="textarea" rows="3" placeholder="Anything you want to say"/>
+                    </Form.Group>
+                    </div>
+                </div>
+            </div>
             <Button type="submit" variant="outlined" style={{border:'solid'}}>Send</Button>
         </form>
         <div style={{backgroundColor:'black', marginTop: 60 , padding: 50}}>
